@@ -63,6 +63,7 @@ strong {
   border-width: 1px;
   border-image: linear-gradient(45deg, rgb(38, 38, 38) 10%, rgb(140, 140, 140) 50%, rgb(38, 38, 38) 90%);
   border-image-slice: 5%;
+  z-index: -10;
 }
 
 .wrapper {
