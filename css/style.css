@@ -66,6 +66,22 @@ strong {
   z-index: -10;
 }
 
+.glass-top {
+  height: 5vh;
+  width: 100vw;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  top: 0px;
+}
+
+.glass-bottom {
+  height: 5vh;
+  width: 100vw;
+  position: fixed;
+  backdrop-filter: blur(5px);
+  bottom: 0px;
+}
+
 .wrapper {
   margin: 5vh;
   display: flex;
@@ -90,7 +106,7 @@ strong {
   padding: 1.5em;
 }
 
-.sep_box {
+.sep-box {
   display: block;
   background-color: #1AD993;
   height: 5px;
