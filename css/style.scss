@@ -57,6 +57,13 @@ ul {
     list-style-type: none;
 }
 
+img {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: $cardBackColor;
+}
+
 /* || CONTAINERS */
 
 /* Fixed Elements */
@@ -194,8 +201,14 @@ ul {
 /* || MEDIA QUERIES */
 
 @media (max-width: 480px) {
+
+    img {
+        margin-bottom: 1rem;
+    }
+
     .card-project {
         grid-template-columns: 100%;
+        padding: 1rem;
     }
 }
 

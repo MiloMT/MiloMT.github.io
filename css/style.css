@@ -47,6 +47,13 @@ ul {
   list-style-type: none;
 }
 
+img {
+  border-style: solid;
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #8C8C8C;
+}
+
 /* || CONTAINERS */
 /* Fixed Elements */
 .main-border {
@@ -181,8 +188,12 @@ ul {
 
 /* || MEDIA QUERIES */
 @media (max-width: 480px) {
+  img {
+    margin-bottom: 1rem;
+  }
   .card-project {
     grid-template-columns: 100%;
+    padding: 1rem;
   }
 }
 @media (max-width: 1024px) {
