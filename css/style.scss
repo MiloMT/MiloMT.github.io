@@ -48,6 +48,10 @@ h3 {
     @include heading-default(1.25rem);
 }
 
+a {
+    text-decoration: none;
+}
+
 p {
     line-height: 1.5;
     letter-spacing: 0.03rem;
@@ -203,7 +207,7 @@ img {
 @media (max-width: 480px) {
 
     img {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .card-project {

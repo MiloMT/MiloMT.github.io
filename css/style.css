@@ -38,6 +38,10 @@ h3 {
   letter-spacing: 0.02rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   line-height: 1.5;
   letter-spacing: 0.03rem;
@@ -189,7 +193,7 @@ img {
 /* || MEDIA QUERIES */
 @media (max-width: 480px) {
   img {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
   .card-project {
     grid-template-columns: 100%;
