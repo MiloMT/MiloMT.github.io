@@ -147,9 +147,6 @@ function Typer (element, options, scenes) {
     	type();
     }
   }
-  
-  // to avoid having to call the play
-  // the first time, let's just do it there
   play();
   
   // we're returning some functions that could be
@@ -159,12 +156,11 @@ function Typer (element, options, scenes) {
 
 var roletyper = document.getElementById('roletyper');
 var player = Typer(roletyper, ['Full Stack Web Developer',
-                            'BIM Application Specialist',
+                            'Ex-BIM Manager',
                             'Technology Enthusiast',
                             'Absolute Nerd']);
 
 // to specify some options, you could do:
 // var player = Typer(vader, { erase: 40, type: 60, break: 4000 }, ['Hello there!', 'How u doing?']);
-
-// now, run the fiddle and you'll see that it gets stopped
-// after 600ms and is resumed after 2 seconds
+setTimeout(player.stop, 0)
+setTimeout(player.play, 1000)
