@@ -38,11 +38,11 @@ body {
 }
 
 h1 {
-    @include heading-default(2.5rem);
+    @include heading-default(6rem);
 }
 
 h2 {
-    @include heading-default(1.5rem);
+    @include heading-default(3rem);
     color: $accentColor;
 }
 
@@ -90,6 +90,7 @@ ul {
 /* Page Sections */
 .header {
     margin-top: $borderMargin;
+    text-align: center;
     align-self: center;
     width: 80%;
     * {
@@ -192,6 +193,15 @@ ul {
 /* || MEDIA QUERIES */
 
 @media (max-width: 1024px) {
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
     .grid-main {
         height: 100%;
         row-gap: 3rem;
@@ -207,6 +217,14 @@ ul {
 }
 
 @media (max-width: 480px) {
+
+    h1 {
+        font-size: 2.1rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
 
     img {
         margin-bottom: 1.5rem;
