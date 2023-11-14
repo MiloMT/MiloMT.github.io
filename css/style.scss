@@ -70,7 +70,7 @@ img {
 
 /* || CONTAINERS */
 
-/* Fixed Elements */
+/* Fixed Layout Elements */
 .main-border {
     height: 90vh;
     width: calc(100vw - 10vh);
@@ -134,6 +134,7 @@ img {
     }
 }
 
+/* Page Sections */
 .header {
     margin-top: 5vh;
     grid-column: 1 / 2;
@@ -159,6 +160,7 @@ img {
     margin-bottom: 5vh;
 }
 
+/* Project Cards */
 .card-project {
     margin-bottom: 2rem;
     border-radius: 15px;
