@@ -13,15 +13,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="grid-main">
+        <div class="grid-main" data-scroll-indicator-title="Home">
             <header class="header content-container">
-                <div class="sep-box-light"></div>
-                <h1>MYLES TAYLOR</h1>
+                <div class="sep-box" class="fade-in"></div>
+                <h1 class="fade-in">MYLES TAYLOR</h1>
                 <h2 id="roletyper"></h2>
-                <div class="sep-box-light"></div>
             </header>
             <main class="grid-content">
-                <section class="about content-container">
+                <section class="about content-container" data-scroll-indicator-title="About">
                     <h3>About</h3>
                     <div class="sep-box"></div>
                     <p>
@@ -33,12 +32,12 @@
                         meaningfully to both new and existing projects.
                     </p>
                 </section>
-                <section class="projects content-container">
+                <section class="projects content-container" data-scroll-indicator-title="Projects">
                     <h3>Projects</h3>
                     <div class="sep-box"></div>
                     <ul class="project-list">
                         <li class="card-project">
-                            <img class="proj_image" src="./img/portfolio_v2.png" alt="Portfolio v2">
+                            <img class="proj-image" src="./img/portfolio_v2.png" alt="Portfolio v2">
                             <div>
                                 <a href="https://milomt.github.io/">
                                     <h3 class="head-m">Portfolio Website V2.0 &#8599</h3>
@@ -54,11 +53,12 @@
                                     <li class="tag">HTML</li>
                                     <li class="tag">CSS</li>
                                     <li class="tag">SCSS</li>
+                                    <li class="tag">Javascript</li>
                                 </ul>
                             </div>
                         </li>
                         <li class="card-project">
-                            <img class="proj_image" src="./img/pypassgen.png" alt="PyPassGen">
+                            <img class="proj-image" src="./img/pypassgen.png" alt="PyPassGen">
                             <div>
                                 <a href="https://github.com/MiloMT/PyPassGen" target="_blank">
                                     <h3 class="head-m">PyPassGen &#8599</h3>
@@ -76,7 +76,7 @@
                             </div>
                         </li>
                         <li class="card-project">
-                            <img class="proj_image" src="./img/portfolio_v1.png" alt="Portfolio v1">
+                            <img class="proj-image" src="./img/portfolio_v1.png" alt="Portfolio v1">
                             <div>
                                 <a href="https://portfolio-site-nine-dusky.vercel.app/" target="_blank">
                                     <h3 class="head-m">Portfolio Website V1.0 &#8599</h3>
@@ -98,15 +98,15 @@
                         </li>
                     </ul>
                 </section>
-                <footer class="footer content-container">
+                <footer class="footer content-container" data-scroll-indicator-title="Contact">
                     <div class="sep-box"></div>
                     <p><strong><i>Let's Chat</i></strong></p>
                     <div>
                         <a href="https://github.com/MiloMT" target="_blank">
-                            <img class="con_image" src="./img/github-coloured.png">
+                            <img class="con-image" src="./img/github-coloured.png">
                         </a>
                         <a href="https://www.linkedin.com/in/myles-t-962aa41aa/" target="_blank">
-                            <img class="con_image" src="./img/LI-coloured.png">
+                            <img class="con-image" src="./img/LI-coloured.png">
                         </a>
                     </div>
                 </footer>

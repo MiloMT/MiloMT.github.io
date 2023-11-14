@@ -81,7 +81,7 @@ ul {
     grid-template-rows: 100vh auto;
     justify-items: center;
     max-width: 1280px; /* Limit container to max 1280px screen size */
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -98,6 +98,7 @@ ul {
 }
 
 /* Page Sections */
+
 .header {
     margin-top: $borderMargin;
     text-align: center;
@@ -198,7 +199,7 @@ ul {
     margin: 1.5rem 0;
 }
 
-.proj_image {
+.proj-image {
     border-style: solid;
     border-radius: 10px;
     border-width: 1px;
@@ -206,12 +207,112 @@ ul {
     width: 100%;
 }
 
-.con_image {
+.con-image {
     height: 2rem;
     margin: 0 0.5rem;
     transition: 0.5s;
     &:hover, :active {
         filter: brightness(70%);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+/* Easy Scroll Dots 2.0.3 --- https://github.com/Superhands89/EasyScrollDots
+* By Superhands89 2019-2022 --- https://github.com/Superhands89/
+* GPLv3 Licence for open source use only
+*/
+.scroll-indicator-controller {
+    position: fixed;
+    top: 50vh;
+    transform: translate(0, -50%);
+    right: 10px;
+    z-index: 999;
+    
+    &.indi-mobile > div span {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+        right: 30px;
+    }
+
+    > div {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        border-radius: 50%;
+        border: 1px solid $accentColor;
+        background: rgba(38, 38, 38, 0.25);
+        margin: 0 0 10px 0;
+        cursor: pointer;
+        transition: background 0.5s ease;
+        will-change: transition;
+
+        span {
+            color: $accentColor;
+            position: absolute;
+            right: calc(100% + 8px);
+            white-space: nowrap;
+            top: 50%;
+            font-family: $paragraphFont;
+            font-size: 1rem;
+            line-height: 1.1rem;
+            width: 0;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(-50%) translateX(10px);
+            transition: all 0.4s ease;
+            will-change: transition;
+            
+            @media (hover: none) {
+                display: none;
+            }
+
+            &:after {
+                content: "-----";
+                padding-left: 5px;
+                letter-spacing: -2px;
+                font-family: arial, sans-serif;
+                vertical-align: text-top;
+                line-height: 14px;
+            }
+        }
+
+        @media (hover: hover), (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            &:hover {
+
+                span {
+                    width: auto;
+                    opacity: 1;
+                    overflow: visible;
+                    transform: translateY(-50%) translateX(0px);
+                }
+            }
+        }
+
+        &.active {
+            background: $accentColor;
+            border-color: rgba(38, 38, 38, 0.25);
+        }
+    }
+}
+// old edge version 18 and below
+@supports (-ms-ime-align:auto) {
+    .scroll-indicator-controller > div span {
+        transition: opacity 0.4s ease;
     }
 }
 
@@ -230,6 +331,11 @@ ul {
     .grid-main {
         height: 100%;
         row-gap: 3rem;
+        max-width: 100vw;
+    }
+
+    .grid-content {
+        max-width: 100vw;
     }
 
     .about {
@@ -238,6 +344,10 @@ ul {
 
     .projects {
         margin-bottom: 0;
+    }
+
+    .content-container {
+        max-width: 100vw;
     }
 }
 
