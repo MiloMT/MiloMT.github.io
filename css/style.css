@@ -132,6 +132,7 @@ ul {
 .card-project {
   margin-bottom: 2rem;
   border-radius: 15px;
+  max-width: 100%;
   padding: 2rem;
   display: grid;
   grid-template-columns: 3fr 7fr;
@@ -150,6 +151,7 @@ ul {
 .tag-list {
   display: flex;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 .tag {
@@ -157,6 +159,7 @@ ul {
   justify-content: center;
   align-items: center;
   margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
   padding: 0.5rem 0.75rem;
   height: 2rem;
   border-radius: 2rem;
@@ -295,10 +298,10 @@ ul {
 /* || MEDIA QUERIES */
 @media (max-width: 1024px) {
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
   h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
   .grid-main {
     height: 100%;
@@ -318,7 +321,7 @@ ul {
     max-width: 100vw;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   h1 {
     font-size: 2.1rem;
   }
