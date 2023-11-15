@@ -81,7 +81,7 @@ function Typer (element, options, scenes) {
 
 var roletyper = document.getElementById('roletyper');
 var player = Typer(roletyper, ['Full Stack Web Developer',
-                            'Ex-BIM Manager',
+                            'Experienced BIM Manager',
                             'Technology Enthusiast',
                             'Absolute Nerd']);
 
