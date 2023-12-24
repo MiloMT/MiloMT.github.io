@@ -139,9 +139,10 @@ ul {
   column-gap: 2rem;
   justify-content: center;
   transition: 0.5s;
+  background-color: #2e2e2e;
 }
 .card-project:hover, .card-project :active {
-  background-color: #2e2e2e;
+  background-color: #3a3a3a;
 }
 
 .head-m {
@@ -163,7 +164,7 @@ ul {
   padding: 0.5rem 0.75rem;
   height: 2rem;
   border-radius: 2rem;
-  background-color: #3a3a3a;
+  background-color: #505050;
   font-weight: bold;
   transition: 0.3s;
 }

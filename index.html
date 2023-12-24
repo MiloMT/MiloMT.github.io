@@ -13,14 +13,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="grid-main" data-scroll-indicator-title="Home">
+        <div class="grid-main">
             <header class="header content-container">
                 <div class="sep-box" class="fade-in"></div>
                 <h1 class="fade-in">MYLES TAYLOR</h1>
                 <h2 id="roletyper"></h2>
             </header>
             <main class="grid-content">
-                <section class="about content-container" data-scroll-indicator-title="About">
+                <section class="about content-container">
                     <h3>About</h3>
                     <div class="sep-box"></div>
                     <p>
@@ -32,10 +32,33 @@
                         contribute meaningfully to both new and existing projects.
                     </p>
                 </section>
-                <section class="projects content-container" data-scroll-indicator-title="Projects">
+                <section class="projects content-container">
                     <h3>Projects</h3>
                     <div class="sep-box"></div>
                     <ul class="project-list">
+                        <li class="card-project">
+                            <img class="proj-image" src="./img/webdev_pathway_assistant.png" alt="Webdev Pathway Assistant API">
+                            <div>
+                                <a href="https://github.com/MiloMT/WebDev-Pathway-Assistant" target="_blank">
+                                    <h3 class="head-m">Webdev Pathway Assistant API &#8599</h3>
+                                </a>
+                                <p>
+                                    Webdev Pathway Assistant API is an API using
+                                    both Flask and PostgreSQL (with SQL Alchemy as
+                                    the ORM) developed as a assessment for the coder
+                                    academy web developer course. It features
+                                    interacting tables through join table setups,
+                                    with validation and sanitisation through
+                                    marshmallow and security / authentication 
+                                    through JWT token generation and use.
+                                </p>
+                                <ul class="tag-list">
+                                    <li class="tag">Python</li>
+                                    <li class="tag">Flask</li>
+                                    <li class="tag">PostgreSQL</li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="card-project">
                             <img class="proj-image" src="./img/portfolio_v2.png" alt="Portfolio v2">
                             <div>
@@ -99,7 +122,7 @@
                         </li>
                     </ul>
                 </section>
-                <footer class="footer content-container" data-scroll-indicator-title="Contact">
+                <footer class="footer content-container">
                     <div class="sep-box"></div>
                     <p><strong><i>Let's Chat</i></strong></p>
                     <div>
