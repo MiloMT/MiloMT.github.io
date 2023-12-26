@@ -86,3 +86,19 @@ var player = Typer(roletyper, ['Full Stack Web Developer',
                             'Absolute Nerd']);
 
 setTimeout(player.play, 1500)
+
+// Custom JS script
+
+function MenuButton() {
+  var menu = document.getElementById("menu")
+  menu.classList.toggle("show")
+}
+
+function chBackcolor() {
+  var navbutton = document.getElementById("navbutton")
+  navbutton.style.background = "#1AD993"
+  var navbar = document.getElementsByClassName("sep-box-light")
+  for (let bar of navbar) {
+    bar.style.background = "#0D0D0D"
+  }
+}

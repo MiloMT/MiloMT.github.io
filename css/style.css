@@ -7,6 +7,7 @@
   box-sizing: border-box;
   color: #F2F2F2;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,6 +34,33 @@ h2 {
 }
 
 h3 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  letter-spacing: 0.02rem;
+}
+
+/* Nav Headers */
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 0.02rem;
+  color: #8C8C8C;
+  margin: 2em 0;
+}
+
+/* Nav Links */
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: 0.02rem;
+  margin-top: 0.5em;
+}
+
+/* Nav Socials */
+h6 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1.25rem;
@@ -86,6 +114,68 @@ ul {
   margin: 1rem 0;
 }
 
+/* Nav Menu */
+.navbutton {
+  background-color: #0D0D0D;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  top: 50px;
+  right: 50px;
+  width: clamp(4em, 5.5vw, 5em);
+  height: clamp(4em, 5.5vw, 5em);
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50%;
+  z-index: 1500;
+}
+
+.fixed-nav {
+  width: 100%;
+  height: 100%;
+  background-color: #0D0D0D;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.fixed-nav-inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20vh 10vh;
+}
+
+.fixed-nav-navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fixed-nav-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+.social-list li {
+  margin-right: 2em;
+}
+
 /* Page Sections */
 .header {
   margin-top: 2vh;
@@ -98,23 +188,6 @@ ul {
 }
 .header * {
   margin: 1rem 0;
-}
-
-.navbar {
-  background-color: #0D0D0D;
-  position: fixed;
-  display: flex;
-  width: 80%;
-  max-width: 1280px;
-  margin-top: 50px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 50px;
-  flex-grow: 0;
-}
-.navbar * {
-  margin: 0.5rem 0;
 }
 
 .about {
@@ -190,9 +263,15 @@ ul {
 .sep-box-light {
   display: block;
   background-color: #F2F2F2;
+  height: 3px;
+  width: 50%;
+}
+
+.sep-box-nav {
+  display: block;
+  background-color: #8C8C8C;
   height: 1px;
-  width: 30%;
-  margin: 1.5rem 0;
+  width: 100%;
 }
 
 .proj-image {
@@ -259,6 +338,13 @@ ul {
   }
   .grid-main {
     grid-template-rows: 100vh auto;
+  }
+  .navbutton {
+    top: 25px;
+    right: 25px;
+  }
+  .fixed-nav-inner {
+    padding: 10vh 5vh;
   }
   .card-project {
     padding: 1rem;
