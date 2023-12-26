@@ -96,9 +96,9 @@ function MenuButton() {
 
 function chBackcolor() {
   var navbutton = document.getElementById("navbutton")
-  navbutton.style.background = "#1AD993"
-  var navbar = document.getElementsByClassName("sep-box-light")
-  for (let bar of navbar) {
-    bar.style.background = "#0D0D0D"
-  }
+  navbutton.classList.toggle("nav-override")
 }
+
+setTimeout(function(){
+  document.body.className="";
+},500);

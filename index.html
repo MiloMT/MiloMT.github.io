@@ -12,7 +12,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body class="preload">
         <nav class="navbutton popup" id="navbutton" onclick="MenuButton(); chBackcolor()">
             <div class="sep-box-light"></div>
             <div class="sep-box-light"></div>
@@ -22,13 +22,13 @@
                 <section class="fixed-nav-navigation">
                     <h4>Navigation</h4>
                     <div class="sep-box-nav"></div>
-                    <a href="#" onclick="MenuButton()">
+                    <a href="#" onclick="MenuButton(); chBackcolor()">
                         <h5>Home</h5>
                     </a>
-                    <a href="#about" onclick="MenuButton()">
+                    <a href="#about" onclick="MenuButton(); chBackcolor()">
                         <h5>About</h5>
                     </a>
-                    <a href="#projects" onclick="MenuButton()">
+                    <a href="#projects" onclick="MenuButton(); chBackcolor()">
                         <h5>Work</h5>
                     </a>
                 </section>

@@ -70,10 +70,10 @@ h6 {
 a {
   text-decoration: none;
 }
-a h3 {
+a h3, a h5, a h6 {
   transition: 0.5s;
 }
-a h3:hover, a h3 :active {
+a h3:hover, a h3 :active, a h5:hover, a h5 :active, a h6:hover, a h6 :active {
   color: #1AD993;
 }
 
@@ -88,6 +88,12 @@ ul {
 
 #roletyper {
   height: 3rem;
+}
+
+.preload * {
+  animation-duration: 0s !important;
+  -webkit-animation-duration: 0s !important;
+  transition: background-color 0s, opacity 0s, color 0s, width 0s, height 0s, padding 0s, margin 0s !important;
 }
 
 /* || CONTAINERS */
@@ -129,6 +135,14 @@ ul {
   justify-content: space-around;
   border-radius: 50%;
   z-index: 1500;
+  transition-duration: 1s;
+}
+
+.nav-override {
+  background-color: #1AD993;
+}
+.nav-override * {
+  background-color: #0D0D0D;
 }
 
 .fixed-nav {
@@ -140,11 +154,13 @@ ul {
   left: 0;
   z-index: 1000;
   opacity: 0;
-  transition: opacity 1s;
+  transition: 1s;
+  visibility: hidden;
 }
 
 .show {
   opacity: 1;
+  visibility: visible;
 }
 
 .fixed-nav-inner {
