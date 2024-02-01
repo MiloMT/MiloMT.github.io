@@ -30,7 +30,16 @@ export default {
       },
       spacing: {
         "margin": "min(4vw, 4rem)"
-      }
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }  
     },
   },
   plugins: [],

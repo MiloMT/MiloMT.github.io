@@ -1,14 +1,22 @@
 <script>
-    // your script goes here
+    import Slider from "./Slider.svelte"
+
+    let mylesSrc = "./myles.svg"
+    let taylorSrc = "./taylor.svg"
+    let subheadSrc = "./subheader.svg"
+
+	$: innerWidth = 0
 </script>
 
-<header id="header" class="flex flex-col text-center items-center mx-margin my-36 md:my-[20rem]">
-    <h1 class="text-title-lg leading-tight mb-10 md:text-title-xl font-heading font-semibold text-gray-light">
-        MYLES TAYLOR
-    </h1>
-    <h2 class="text-title-sm md:text-5xl font-heading font-semibold text-green">
-        Full Stack Web Developer
-    </h2>
+<svelte:window bind:innerWidth/>
+
+<header id="header" class="flex flex-col text-center items-center mx-margin my-20">
+    <div class="w-full">
+        <div class="flex flex-col items-start lg:flex-row w-full mb-4">
+            <img src="{mylesSrc}" alt="Header" class="w-full lg:w-full mb-4">
+        </div>
+    </div>
+    <img src="{subheadSrc}" alt="Header" class="w-full">
 </header>
-<hr class="mx-margin mb-10 h-0.5 border-t-2 border-green">
+<Slider />
 

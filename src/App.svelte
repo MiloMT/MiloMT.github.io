@@ -6,12 +6,8 @@
   import ProjList from "./lib/ProjList.svelte";
 </script>
 
-
-<div class="max-w-[100rem]">
-  <BubbleMenu />
-  <Header />
-  <About />
-  <ProjList />
-</div>
-
+<BubbleMenu />
+<Header />
+<About />
+<ProjList />
 <Footer />
