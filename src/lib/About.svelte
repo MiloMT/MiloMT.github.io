@@ -2,7 +2,7 @@
     // your script goes here
 </script>
 
-<section id="about" class="text-gray-light mx-margin">
+<section id="about" class="text-gray-light mx-margin my-20">
     <h3 class="text-title-lg font-paragraph tracking-widest">
         <i>Hi.</i>
     </h3>

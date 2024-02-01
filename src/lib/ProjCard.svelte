@@ -7,15 +7,15 @@
     export let tags: string[]
 </script>
 
-<li class="group w-full lg:w-[49%] mb-margin">
+<li class="group w-full md:w-[49%] mb-margin">
     <a href="{link}" target="_blank">
         <div class="flex flex-row">
             <div class="relative">
                 <img src="{imagePath}" alt="{imageAlt}" 
                 class="rounded-2xl group-hover:rounded-[3rem] group-hover:brightness-50 
-                duration-500 brightness-90 border-solid border-4 border-gray">
-                <div class="bg-gray-dark z-[1] w-full h-full top-0 absolute opacity-10 rounded-2xl
-                group-hover:rounded-[3rem] duration-500">
+                duration-500 brightness-110">
+                <div class="bg-gray-dark z-[1] w-full h-1/2 md:h-1/4 bottom-0 absolute opacity-70 rounded-b-2xl
+                group-hover:rounded-b-[3rem] duration-500">
                 </div>
                 <div class="absolute flex flex-col z-[5] bottom-5 left-5">
                     <h6 class="font-heading font-semibold text-title-sm text-gray-light mt-6
