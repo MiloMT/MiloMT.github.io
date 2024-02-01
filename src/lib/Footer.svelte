@@ -2,7 +2,7 @@
     // your script goes here
 </script>
 
-<footer id="footer" class="bg-gray-light rounded-t-3xl py-20 pl-12">
+<footer id="footer" class="bg-gray-light rounded-t-3xl py-20 px-12">
     <h3 class="font-paragraph text-title-lg font-medium text-gray-dark">
         <i>Let's Chat.</i>
     </h3>
