@@ -2,12 +2,12 @@
     // your script goes here
 </script>
 
-<footer id="footer" class="bg-gray-light rounded-t-3xl py-20 px-12">
-    <h3 class="font-paragraph text-title-lg font-medium text-gray-dark">
+<footer id="footer" class="bg-gray-light rounded-t-3xl py-10">
+    <h3 class="font-paragraph text-title-lg md:text-title-xl font-medium text-gray-dark px-12">
         <i>Let's Chat.</i>
     </h3>
-    <hr class="my-12 h-0.5 w-1/3 border-t-2 border-green">
-    <div class="font-paragraph font-semibold text-gray-dark leading-6">
+    <hr class="my-10 h-4 w-full border-8 border-green">
+    <div class="font-paragraph text-title-sm font-semibold text-gray-dark px-12">
         <p>
             Want to discuss what we can accomplish together? Get in touch.
         </p>

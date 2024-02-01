@@ -1,10 +1,11 @@
-<script>
+<script lang="ts">
     import ProjCard from "./ProjCard.svelte"
     import projList from "../../public/projects"
+
 </script>
 
 <section>
-    <ul id="projects" class="flex flex-row flex-wrap justify-around">
+    <ul id="projects" class="flex flex-row flex-wrap justify-between mx-margin">
         {#each projList as proj}
             <ProjCard 
                 link={proj.link} 

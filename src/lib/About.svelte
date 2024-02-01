@@ -3,7 +3,7 @@
 </script>
 
 <section id="about" class="text-gray-light mx-margin">
-    <h3 class="text-title-lg font-paragraph leading-loose tracking-widest">
+    <h3 class="text-title-lg font-paragraph tracking-widest">
         <i>Hi.</i>
     </h3>
     <p class="text-title-md font-semibold font-paragraph leading-tight

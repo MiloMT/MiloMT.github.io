@@ -2,7 +2,7 @@
     import skillList from "../../public/skills"
 </script>
 
-<div class="max-w-[100vw] overflow-hidden flex flex-nowrap bg-green py-4">
+<div class="max-w-[100vw] overflow-hidden flex flex-nowrap bg-green py-4 mb-20">
     <ul class="flex items-center justify-center animate-infinite-scroll">
         {#each skillList as skill}
             <li class="font-paragraph font-semibold text-gray-dark text-title-sm md:text-title-md">

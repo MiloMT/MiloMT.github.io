@@ -10,7 +10,7 @@
 
 <svelte:window bind:innerWidth/>
 
-<header id="header" class="flex flex-col text-center items-center mx-margin my-20">
+<header id="header" class="max-w-full flex flex-col text-center items-center mx-margin my-20">
     <div class="w-full">
         <div class="flex flex-col items-start lg:flex-row w-full mb-4">
             <img src="{mylesSrc}" alt="Header" class="w-full lg:w-full mb-4">
