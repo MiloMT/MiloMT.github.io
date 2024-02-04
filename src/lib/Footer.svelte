@@ -1,24 +1,37 @@
 <script>
-    // your script goes here
+    import Slider from "./Slider.svelte";
+    
+    const links = [
+        {
+            link: "mailto:myles@mylestaylor.dev",
+            src: "/email.svg",
+            alt: "Email"
+        },
+        {
+            link: "https://github.com/MiloMT",
+            src: "/github-coloured.png",
+            alt: "Github"
+        },
+        {
+            link: "https://www.linkedin.com/in/myles-t-962aa41aa/",
+            src: "/LI-coloured.png",
+            alt: "LinkedIn"
+        }
+    ]
 </script>
 
-<footer id="footer" class="bg-gray-light rounded-t-3xl py-10">
-    <h3 class="font-paragraph text-title-lg md:text-title-xl font-medium text-gray-dark px-12">
-        <i>Let's Chat.</i>
-    </h3>
-    <hr class="my-10 h-4 w-full border-8 border-green">
-    <div class="font-paragraph text-title-sm font-semibold text-gray-dark px-12">
-        <p>
-            Want to discuss what we can accomplish together? Get in touch.
-        </p>
-        <br>
-        <div>Email: 
-            <a href="mailto:myles@mylestaylor.dev">myles@mylestaylor.dev</a>
-        </div> 
-        <div>
-            Socials:
-            <a href="https://github.com/MiloMT" target="_blank">Github</a> /
-            <a href="https://www.linkedin.com/in/myles-t-962aa41aa/" target="_blank">LinkedIn</a>
-        </div>
+<footer id="footer">
+    <Slider 
+            tags={Array(10).fill("LET'S CHAT")}
+        />
+    <div class="flex flex-row justify-around my-20">
+        {#each links as link}
+            <a href={link.link} target="_blank" class="
+                flex justify-center font-paragraph font-semibold 
+                text-gray-light text-title-sm
+                w-1/4 max-w-32 px-2 py-1 mr-2 bg-gray-dark
+                "><img src="{link.src}" alt="{link.alt}" class=
+                "hover:brightness-75 hover:scale-95 duration-500"></a>
+        {/each}
     </div>
 </footer>

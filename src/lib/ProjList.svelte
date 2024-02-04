@@ -12,9 +12,9 @@
                 imagePath={proj.imagePath} 
                 imageAlt={proj.imageAlt} 
                 name={proj.name} 
-                desc={proj.desc} 
                 tags={proj.tags}
             />
+        <!-- Removed from ProjCard: desc={proj.desc} -->
         {/each}
     </ul>
 </section>

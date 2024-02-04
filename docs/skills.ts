@@ -1,31 +1,13 @@
 const skillList = [
-    {
-        skill: "HTML",
-    },
-    {
-        skill: "CSS",
-    },
-    {
-        skill: "JAVASCRIPT",
-    },
-    {
-        skill: "PYTHON",
-    },
-    {
-        skill: "FLASK",
-    },
-    {
-        skill: "PSQL",
-    },
-    {
-        skill: "MONGODB",
-    },
-    {
-        skill: "REACT",
-    },
-    {
-        skill: "SVELTE",
-    },
+    "HTML",
+    "CSS",
+    "JAVASCRIPT",
+    "PYTHON",
+    "FLASK",
+    "PSQL",
+    "MONGODB",
+    "REACT",
+    "SVELTE",
 ]
 
 export default skillList

@@ -3,7 +3,7 @@
     export let imagePath: string
     export let imageAlt: string
     export let name: string
-    export let desc: string
+    // export let desc: string
     export let tags: string[]
 </script>
 

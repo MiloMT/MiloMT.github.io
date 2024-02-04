@@ -1,8 +1,8 @@
 <script>
     import Slider from "./Slider.svelte"
+    import skillList from "../../public/skills"
 
     let mylesSrc = "./myles.svg"
-    let taylorSrc = "./taylor.svg"
     let subheadSrc = "./subheader.svg"
 
 	$: innerWidth = 0
@@ -18,5 +18,7 @@
     </div>
     <img src="{subheadSrc}" alt="Header" class="w-full">
 </header>
-<Slider />
+<Slider 
+    tags={skillList}
+/>
 
