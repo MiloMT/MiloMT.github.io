@@ -1,5 +1,4 @@
 <script>
-    // your script goes here
 </script>
 
 <section id="about" class="text-gray-light mx-margin my-20">

@@ -1,6 +1,6 @@
 <script lang="ts">
     import ProjCard from "./ProjCard.svelte"
-    import projList from "../../public/projects"
+    import projList from "../assets/projectList"
 
 </script>
 
@@ -14,7 +14,6 @@
                 name={proj.name} 
                 tags={proj.tags}
             />
-        <!-- Removed from ProjCard: desc={proj.desc} -->
         {/each}
     </ul>
 </section>

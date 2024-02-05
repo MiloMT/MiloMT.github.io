@@ -1,20 +1,24 @@
 <script>
     import Slider from "./Slider.svelte";
-    
+    import imgEmail from "../assets/logos/email.svg"
+    import imgGithub from "../assets/logos/github-coloured.png"
+    import imgLinkedin from "../assets/logos/LI-coloured.png"
+
+
     const links = [
         {
             link: "mailto:myles@mylestaylor.dev",
-            src: "/email.svg",
+            src: imgEmail,
             alt: "Email"
         },
         {
             link: "https://github.com/MiloMT",
-            src: "/github-coloured.png",
+            src: imgGithub,
             alt: "Github"
         },
         {
             link: "https://www.linkedin.com/in/myles-t-962aa41aa/",
-            src: "/LI-coloured.png",
+            src: imgLinkedin,
             alt: "LinkedIn"
         }
     ]
