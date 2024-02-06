@@ -1,9 +1,8 @@
 <script lang="ts">
     export let link: string
-    export let imagePath: string
+    export let imagePath: any
     export let imageAlt: string
     export let name: string
-    // export let desc: string
     export let tags: string[]
 </script>
 
@@ -11,7 +10,7 @@
     <a href="{link}" target="_blank">
         <div class="flex flex-row">
             <div class="relative">
-                <img src="{imagePath}" alt="{imageAlt}" 
+                <img src={imagePath} alt="{imageAlt}" 
                 class="rounded-2xl group-hover:rounded-[3rem] group-hover:brightness-50 
                 duration-500 brightness-110">
                 <div class="bg-gray-dark z-[1] w-full h-1/2 md:h-1/4 bottom-0 absolute opacity-70 rounded-b-2xl
@@ -31,11 +30,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- <div>
-                <p class="font-paragraph text-xl text-gray-light mt-4">
-                    {desc}
-                </p>
-            </div> -->
         </div> 
     </a>
 </li>

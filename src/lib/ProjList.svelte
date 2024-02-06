@@ -1,7 +1,6 @@
 <script lang="ts">
     import ProjCard from "./ProjCard.svelte"
     import projList from "../assets/projectList"
-
 </script>
 
 <section>
