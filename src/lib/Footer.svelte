@@ -28,7 +28,7 @@
     <Slider 
             tags={Array(10).fill("LET'S CHAT")}
         />
-    <div class="flex flex-row justify-around my-20">
+    <div class="flex flex-row justify-around my-20 max-w-[1280px] mx-auto">
         {#each links as link}
             <a href={link.link} target="_blank" class="
                 flex justify-center font-paragraph font-semibold 

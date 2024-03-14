@@ -1,5 +1,19 @@
 const projList = [
     {
+        link: "https://moviemaestro.netlify.app/",
+        imagePath: "./moviemaestro.png",
+        imageAlt: "Movie Maestro",
+        name: "Movie Maestro",
+        desc: "A group project delivered for the coder academy course. A full stack application utilising react for the front end, express for the back end and mongoDB for the database. The app is designed to help users find a movie to watch across multiple streaming platforms and with editable filters.",
+        tags: [
+            "React",
+            "Express",
+            "MongoDB",
+            "Tailwind",
+            "Bootstrap"
+        ]
+    },
+    {
         link: "https://milomt.github.io/",
         imagePath: "./portfolio_v3.png",
         imageAlt: "Portfolio v3",

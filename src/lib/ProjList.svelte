@@ -4,7 +4,7 @@
 </script>
 
 <section>
-    <ul id="projects" class="flex flex-row flex-wrap justify-between mx-margin">
+    <ul id="projects" class="flex flex-row flex-wrap justify-around mx-margin">
         {#each projList as proj}
             <ProjCard 
                 link={proj.link} 
