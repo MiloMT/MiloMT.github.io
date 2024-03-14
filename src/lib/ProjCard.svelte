@@ -13,7 +13,7 @@
                 <img src={imagePath} alt="{imageAlt}" 
                 class="rounded-2xl group-hover:rounded-[3rem] group-hover:brightness-50 
                 duration-500 brightness-110">
-                <div class="bg-gray-dark z-[1] w-full h-1/5 bottom-0 absolute opacity-70 rounded-b-2xl
+                <div class="bg-gray-dark z-[1] w-full h-1/2 sm:h-1/4 bottom-0 absolute opacity-70 rounded-b-2xl
                 group-hover:rounded-b-[3rem] duration-500">
                 </div>
                 <div class="absolute flex flex-col z-[5] bottom-5 left-5">
@@ -23,7 +23,7 @@
                         {#each tags as tag}
                             <li class="flex justify-center font-paragraph font-semibold 
                             text-gray-light border-solid border-green border-2 rounded-lg
-                            w-fit px-2 py-1 mr-2 hover:px-4 duration-500 bg-gray-dark">
+                            w-fit px-2 py-1 mr-2 mt-2 sm:mt-0 hover:px-4 duration-500 bg-gray-dark">
                                 {tag}
                             </li>
                         {/each}
