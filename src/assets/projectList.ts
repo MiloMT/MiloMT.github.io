@@ -6,10 +6,10 @@ const projList = [
         name: "Movie Maestro",
         desc: "A group project delivered for the coder academy course. A full stack application utilising react for the front end, express for the back end and mongoDB for the database. The app is designed to help users find a movie to watch across multiple streaming platforms and with editable filters.",
         tags: [
+            "Javascript",
             "React",
             "Express",
             "MongoDB",
-            "Tailwind",
             "Bootstrap"
         ]
     },
