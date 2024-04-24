@@ -10,7 +10,8 @@ const projList = [
             "React",
             "Express",
             "MongoDB",
-            "Bootstrap"
+            "Bootstrap",
+            "Tailwind"
         ]
     },
     {
