@@ -17,14 +17,14 @@ const Home = (): React.JSX.Element => {
     <main>
       <Container className="mt-48">
         <Image
-          src={"/images/myles.svg"}
+          src={"/nextjs-github-pages/images/myles.svg"}
           alt={"first heading"}
           className="w-full mb-4"
           width={1}
           height={1}
         />
         <Image
-          src={"/images/subheader.svg"}
+          src={"/nextjs-github-pages/images/subheader.svg"}
           alt={"first heading"}
           className="w-full mb-4"
           width={1}
@@ -79,7 +79,7 @@ const Home = (): React.JSX.Element => {
             desc={proj.desc}
             name={proj.name}
             tags={proj.tags}
-            imagePath={`/images/projects/${proj.imagePath}`}
+            imagePath={`/nextjs-github-pages/images/projects/${proj.imagePath}`}
             imageAlt={proj.imageAlt}
             link={proj.link}
           />
@@ -91,7 +91,7 @@ const Home = (): React.JSX.Element => {
           {socials.map((social: imgLink) => (
             <ImageLink
               key={social.link}
-              imagePath={`/images/logos/${social.imagePath}`}
+              imagePath={`/nextjs-github-pages/images/logos/${social.imagePath}`}
               imageAlt={social.imageAlt}
               link={social.link}
             />
